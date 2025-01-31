@@ -1,0 +1,50 @@
+# GravityGraphSAGE: Link Prediction in Directed Attributed Graphs
+
+This repository contains the implementation and replicability material for the paper **"GravityGraphSAGE: Link Prediction in Directed Attributed Graphs"**.
+
+## Dataset Download
+
+To download the datasets from the Netzschleuder repository, follow these steps:
+
+1. Open a terminal in the root GG-SAGE folder.
+2. Run the following command:
+```bash
+   python -m Datasets.get_netzschleuder_graphs
+```
+
+Alternatively, you can refer to the EasyNetz repository for datasets:  
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14710814.svg)](https://doi.org/10.5281/zenodo.14710814)
+
+## Training the Model
+
+To train the GravityGraphSAGE model, run the following command from the root GG-SAGE folder:
+```bash
+   python -m GG-SAGE.train
+```
+
+To train Gravity GAE/VGAE and Source/Target GAE/VGAE (re-adapted from gravity_gae_torch_geometric), follow these steps:
+
+1. Navigate to the GG-SAGE/other_models/gravity_gae/ directory.
+
+2. Run the training script:
+```bash
+   python main.py
+```
+
+## Required Dependencies
+
+Make sure you have the following Python packages installed:
+
+- numpy
+- pandas
+- scipy
+- scipy-sparse
+- scikit-learn
+- networkx
+- pytorch
+- pyg (PyTorch Geometric)
+
+
+## License
+
+This repository follows the license of the original paper. Please refer to the paper for citation details.
